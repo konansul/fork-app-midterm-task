@@ -23,6 +23,7 @@ Forkio-Midterm/
 │   ├── logo1.png           # Navbar logo
 │   ├── laptop.png          # Main text section background image
 │   └── (other assets)  
+│
 ├── js/
 │   └── index.js            # JavaScript file 
 │
