@@ -1,18 +1,19 @@
-# Forkio Web App — Midterm Project
+## Forkio Web App — Midterm Project
 
 This project is a front-end implementation of the “Forkio” web application design provided in Figma, as part of the midterm task. The goal of this project is to reproduce a multi-section landing page using only HTML, CSS, and static assets, accurately following the layout and positioning from the given Figma template.
 
-## Author
+### Author
 
 Kanan Sultanov 606.23E
 Azerbaijan State Oil and Industrial University, Department of General and Applied Mathematics
 
-## Objectives
+### Objectives
 Convert the provided Figma mockup into a functional and responsive HTML/CSS page. Maintain pixel-perfect alignment and styling consistency with the design. Organize the project into clear, modular folders for maintainability. Adhere to modern web standards and clean code principles.
 
-## Project Structure
+### Project Structure
 
-Forkio-Midterm/
+```
+fork-app-midterm-task/
 │
 ├── .idea/                  # IDE configuration files
 │
@@ -30,8 +31,8 @@ Forkio-Midterm/
 ├── index.html              # Main HTML page
 │
 └── README.md               # Project documentation (this file)
-
-## Setup and Usage
+```
+### Setup 
 
 To view the project locally:
 
@@ -45,7 +46,7 @@ To view the project locally:
 
 3.	Open the main HTML file: Locate index.html and pen it directly in your web browser (double-click or drag-and-drop)
 
-## Design Reference
+### Design Reference
 
 The visual layout and component structure of this project are based on the official Forkio Figma design, accessible here:
 
@@ -53,17 +54,15 @@ Forkio Figma Template: https://www.figma.com/design/9lLwBJciU4yjDZBSnqqXSS?fuid=
 
 All spacing, coordinates, typography, and color codes are replicated from the provided Figma source to achieve an accurate match.
 
-## Technologies Used
-	•	HTML5 — Semantic markup and structure
-	•	CSS3 — Layout, styling, and positioning (including absolute coordinates)
-	•	Figma — Source design reference
-	•	Google Fonts — Montserrat, Lato, and Roboto Mono families
+### Technologies Used
 
-## License
+WebStorm, HTML5, CSS3, JavaScript, Figma, Google Fonts
+
+### License
 
 This project follows the MIT License. It was developed for educational purposes as part of a university coursework and is intended solely for non-commercial, academic use.
 
-## Preview Screenshots
+### Preview Screenshots
 
 Below are sample screenshots from the completed web page. They illustrate the main sections as implemented from the Figma design:
 
