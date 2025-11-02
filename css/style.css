@@ -1,0 +1,568 @@
+.montserrat-title { font-family: "Montserrat", sans-serif; }
+.open-text { font-family: "Open Sans", sans-serif;  }
+.mono-detail { font-family: "Roboto Mono", monospace; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+    padding-top: 90px;
+}
+
+
+/* Navigation Bar */
+
+.navigationbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navigationbar.scrolled {
+    background: rgba(141, 129, 172, 0.85);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.logo-img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.logo-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.4s ease;
+}
+
+.logo-img .logo-default {
+    opacity: 1;
+}
+
+.logo-img .logo-hover {
+    opacity: 0;
+}
+
+.logo:hover .logo-hover {
+    opacity: 1;
+}
+
+.logo:hover .logo-default {
+    opacity: 0;
+}
+
+.logo-text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #8D81AC;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.logo:hover .logo-text {
+    color: #FFFFFF;
+}
+
+.navigation-links {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    margin-left: 350px
+}
+
+.navigation-links a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #8D81AC;
+    transition: 0.3s;
+}
+
+.navigation-links a:hover {
+    color: #FFFFFF;
+}
+
+.buy-button {
+    background: #8D81AC;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    border: 2px solid #8D81AC;
+    border-radius: 40px;
+    padding: 10px 37px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-button:hover {
+    background: #FFFFFF;
+    color: #8D81AC ;
+}
+
+
+/* Main Text */
+
+.main-text {
+    position: relative;
+    background-color: #000;
+    text-align: center;
+    overflow: hidden;
+    padding: 100px 20px 0;
+}
+
+.main-text-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.main-text-content h1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.main-text-subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    color: #8D81AC;
+    margin-bottom: 10px;
+}
+
+.main-text-version {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #848E97;
+}
+
+.laptop-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: -150px;
+}
+
+
+/* Download Button */
+
+.download-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+    background: #000;
+    margin-top: -70px
+}
+
+.download-button-main {
+    color: #FFFFFF;
+    background: #8D81AC;
+    border: 2px solid #8D81AC;
+    border-radius: 40px;
+    padding: 20px 70px;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.download-button-main:hover {
+    background: #FFFFFF;
+    color: #8D81AC;
+}
+
+.trial-text {
+    font-size: 14px;
+    color: #848E97;
+    margin-top: 20px;
+}
+
+
+/* Present Section */
+
+.present-text {
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 120px 20px;
+    margin-top: -150px;
+}
+
+.present-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+    color: #635C73;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.present-text p {
+    font-family: 'Lato', sans-serif;
+    max-width: 875px;
+    margin: 0 auto 40px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 32px;
+    color: #323232;
+}
+
+.github-buttons {
+    width: 360px;
+    height: 26px;
+    margin: -10px auto 0;
+    background: url("../images/github-buttons.png") no-repeat center;
+    background-size: contain;
+}
+
+
+/* Features Section= */
+
+.features {
+    background: #f4f4f4;
+    padding: 120px 0;
+    color: #323232;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 0 0 60px;
+    gap: 60px;
+}
+
+.features-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.feature-icon {
+    width: 100px;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.features-left .feature:nth-child(3) .feature-icon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-55px);
+}
+
+.features-left .feature:nth-child(3) .feature-icon img {
+    width: 70px;
+    height: auto;
+}
+
+.features-left .feature:nth-child(3) .feature-text {
+    margin-left: -55px;
+}
+
+.features-left .feature:nth-child(4) .feature-icon {
+    width: 80px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(5px);
+}
+
+.features-left .feature:nth-child(4) .feature-icon img {
+    width: 70px;
+    height: auto;
+}
+
+.features-left .feature:nth-child(4) .feature-text {
+    margin-left: 15px;
+}
+
+.feature-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #323232;
+    margin-bottom: 10px;
+}
+
+.feature-text p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #848E97;
+    max-width: 420px;
+    font-weight: 300;
+}
+
+.features-right {
+    flex: 1;
+    text-align: center;
+}
+
+.features-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #8D81AC;
+    margin-bottom: 40px;
+}
+
+.vscode-image {
+    width: 130%;
+    max-width: 700px;
+    height: auto;
+}
+
+
+/* Testimonials Section */
+
+.testimonials {
+    background: url("../images/background1.png") no-repeat center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+    margin-top: -80px;
+}
+
+.testimonials h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.testimonials-grid {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 110px;
+    justify-items: center;
+    margin: 140px auto 60px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 340px;
+    text-align: center;
+}
+
+.testimonial-logo {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.testimonial-text {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+.testimonials-divider {
+    width: 55%;
+    height: 2px;
+    background: #645766;
+    margin: 60px auto 30px;
+    position: relative;
+    transform: translateY(170px);
+}
+
+.testimonials-footer {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #A291A5;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    transform: translateY(80px);
+}
+
+
+/* Pricing Section */
+
+.pricing {
+    background: url("../images/background2.png") no-repeat center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: -10px;
+}
+
+.pricing h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 140px;
+}
+
+.pricing-grid {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin: 80px auto 0;
+}
+
+.price-card {
+    width: 260px;
+    height: 450px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.price-card:hover {
+    transform: scale(1.15);
+    background: #463048;
+}
+
+.price-card-header {
+    width: 100%;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.06);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.price-card-header h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.price-card-content {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.price .dollar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.period {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffffcc;
+    margin-bottom: 20px;
+}
+
+.separator {
+    width: 60px;
+    height: 5px;
+    background: #8D81AC;
+    margin-bottom: 25px;
+}
+
+.details {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 35px;
+}
+
+.purchase-button {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    padding: 12px 0;
+    width: 160px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    outline: none;         /* ← убираем контур при фокусе */
+}
+.purchase-button:hover {
+    background: #8D81AC;
+}
+
+@media (max-width: 900px) {
+    .pricing h2 {
+        font-size: 36px;
+    }
+
+    .price-card {
+        width: 90%;
+    }
+
+    .price {
+        font-size: 50px;
+    }
+}
