@@ -547,7 +547,7 @@ body {
     font-size: 15px;
     cursor: pointer;
     transition: 0.3s ease;
-    outline: none;         /* ← убираем контур при фокусе */
+    outline: none;  
 }
 .purchase-button:hover {
     background: #8D81AC;
