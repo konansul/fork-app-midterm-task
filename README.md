@@ -1,11 +1,11 @@
+# Forkio Web App — Midterm Project
+
+This project is a front-end implementation of the “Forkio” web application design provided in Figma, as part of the midterm task. The goal of this project is to reproduce a multi-section landing page using only HTML, CSS, and static assets, accurately following the layout and positioning from the given Figma template.
+
 ## Author
 
 Kanan Sultanov 606.23E
 Azerbaijan State Oil and Industrial University, Department of General and Applied Mathematics
-
-# Forkio Web App — Midterm Project
-
-This project is a front-end implementation of the “Forkio” web application design provided in Figma, as part of the midterm task. The goal of this project is to reproduce a multi-section landing page using only HTML, CSS, and static assets, accurately following the layout and positioning from the given Figma template.
 
 ## Objectives
 Convert the provided Figma mockup into a functional and responsive HTML/CSS page. Maintain pixel-perfect alignment and styling consistency with the design. Organize the project into clear, modular folders for maintainability. Adhere to modern web standards and clean code principles.
@@ -38,9 +38,9 @@ To view the project locally:
    ```bash
    git clone https://github.com/konansul/fork-app-midterm-task.git
 
-2.	Navigate into the project directory:
-
-cd fork-app-midterm-task
+2. Navigate into the project directory:
+   ```bash 
+   cd fork-app-midterm-task
 
 3.	Open the main HTML file: Locate index.html and pen it directly in your web browser (double-click or drag-and-drop)
 
